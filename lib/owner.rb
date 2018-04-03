@@ -75,12 +75,13 @@ class Owner
     @pets.each_pair do | pet, instance|
       instance.each do | animal|
         animal.mood = 'nervous'
-      end  
+      end 
+      instance.clear
     end 
-    binding.pry
-    @pets[:dogs].clear
-    @pets[:cats].clear
-    @pets[:fishes].clear
+    
+    # @pets[:dogs].clear
+    # @pets[:cats].clear
+    # @pets[:fishes].clear
   end
   
   def list_pets
