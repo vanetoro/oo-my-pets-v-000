@@ -77,6 +77,7 @@ class Owner
         animal.mood = 'nervous'
       end  
     end 
+    binding.pry
     @pets[:dogs].clear
     @pets[:cats].clear
     @pets[:fishes].clear
